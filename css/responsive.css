@@ -1,0 +1,92 @@
+@media (min-width: 620px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .nav-bar-links {
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    display: unset;
+  }
+  .cta button {
+    width: unset;
+    margin: unset;
+  }
+  .cta .trans-btn {
+    margin-right: 1rem;
+  }
+
+  nav {
+    transform: translateX(-55rem) translateY(1rem);
+  }
+  nav a {
+    all: unset;
+    color: #b0b0b0;
+    margin: 0 1rem;
+  }
+  nav a:hover {
+    color: #ffffff;
+  }
+  .section {
+    padding: 8rem 5rem;
+  }
+  /* tools */
+  .tools h2 {
+    max-width: 35ch;
+  }
+
+  .grid-container {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  /* the transform sect */
+  .two-col-sect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .col-sm {
+    max-height: 90%;
+    max-width: 100%;
+  }
+  .col-sm img {
+    height: 100%;
+  }
+  /* offer */
+  .offer-sect h2 {
+    max-width: 43ch;
+  }
+  .offer-sect .offer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* testimonial */
+  .uber-contain {
+    display: flex;
+    align-items: center;
+  }
+  .vertical-line {
+    width: 1px;
+    height: 3rem;
+    background-color: #5e5a5a;
+    margin: 0 0.5rem;
+  }
+  .col-trans {
+    max-width: 50ch;
+  }
+  .footer-head {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+}
