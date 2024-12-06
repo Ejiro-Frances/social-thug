@@ -29,6 +29,9 @@
   nav a:hover {
     color: #ffffff;
   }
+}
+
+@media (min-width: 780px) {
   .section {
     padding: 8rem 5rem;
   }

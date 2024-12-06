@@ -11,6 +11,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 img {
   display: inline-block;
@@ -56,6 +57,7 @@ header {
 .hamburger-menu {
   position: relative;
 }
+
 .hamburger-menu span {
   display: block;
   width: 2.6rem;
@@ -76,7 +78,7 @@ header {
 }
 .nav-bar-links {
   position: absolute;
-  top: 7rem;
+  top: 8%;
   left: 0;
   right: 0;
   background: #444444;
@@ -170,11 +172,13 @@ button {
   margin-right: 0.9rem;
 }
 /* images in the home page */
+
 .icon-img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   margin-bottom: 1rem;
+  overflow-x: hidden;
 }
 
 .half-icon-img {
@@ -183,6 +187,9 @@ button {
   gap: 1rem;
 }
 
+/* .half-icon-img img {
+  width: 150px;
+} */
 /* the section class is to maintain padding through out */
 .section {
   padding: 4rem 1rem;
