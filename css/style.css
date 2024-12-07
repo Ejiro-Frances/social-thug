@@ -81,7 +81,7 @@ header {
   top: 8%;
   left: 0;
   right: 0;
-  background: #444444;
+  background: #121212;
   min-height: 90vh;
   display: flex;
   padding-bottom: 2rem;
@@ -100,13 +100,59 @@ nav a {
   font-size: 2.5rem;
 }
 
-select {
-  color: inherit;
-  background: inherit;
-  border: none;
-  font-size: inherit;
+.select {
+  display: inline-block;
+  position: relative;
+  padding-left: 0.3rem;
+  transition: all 0.3s ease;
 }
 
+/*  */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Smooth transition for animation */
+}
+
+.arrow.active {
+  transform: rotate(90deg); /* Rotates > to point downward */
+}
+/*  */
+.service-container {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  right: 0;
+  display: none;
+  font-size: small;
+}
+
+.service-container.active {
+  display: block;
+}
+
+.service-items li {
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem; */
+  margin: 1.5rem;
+}
+.service-items li img {
+  height: 50%;
+  width: 60%;
+}
+.service-items p {
+  display: none;
+}
+.service-dropdown-cta p {
+  background: #444;
+  padding: 1rem;
+
+  color: #fff;
+}
+.service-dropdown-cta a {
+  display: block;
+  text-decoration: underline;
+}
 button {
   padding: 8px 20px;
   color: inherit;
@@ -128,7 +174,9 @@ button {
   margin: 1rem auto;
   width: 95%;
 }
-
+.cta.active {
+  margin-top: 55%;
+}
 /* main */
 
 .hero-page {
@@ -151,7 +199,7 @@ button {
   text-align: center;
 }
 .hero-container {
-  padding: 5rem 0;
+  padding: 5rem 1.5rem;
 }
 .hero-text {
   max-width: 70rem;
@@ -187,12 +235,9 @@ button {
   gap: 1rem;
 }
 
-/* .half-icon-img img {
-  width: 150px;
-} */
 /* the section class is to maintain padding through out */
 .section {
-  padding: 4rem 1rem;
+  padding: 5rem 2.2rem;
 }
 .section h2 {
   font-size: clamp(2.4rem, 4vw + 1rem, 3.5rem);
@@ -288,6 +333,9 @@ button {
 }
 
 /* footer */
+.footer-head section.links {
+  margin: 2rem 0;
+}
 .footer ul {
   padding: 1rem 0;
 }
@@ -298,6 +346,7 @@ button {
 }
 label {
   margin: 1rem 0;
+  display: block;
 }
 input {
   padding: 1.2rem 1rem;
@@ -305,4 +354,26 @@ input {
   outline: none;
   background: inherit;
   color: #444444;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.foot-socials {
+  padding: 1.7rem 0;
+}
+footer .col-beside-socials span a {
+  display: block;
+  padding: 0.8rem 0;
+  text-decoration: underline;
+}
+.col-beside-socials span {
+  margin-bottom: 7rem;
+}
+.col-beside-socials p {
+  padding: 2rem 0;
+}
+small {
+  padding: 1.5rem 0;
+}
+footer small a {
+  text-decoration: underline;
 }

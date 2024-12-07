@@ -30,19 +30,61 @@
           <a href="index.html">Home</a>
           <a href="#about">About Us</a>
           <a href="#pricing">Pricing</a>
-          <a href="#" class="dropdown">
-            <select name="service" id="service">
-              <option value="service">Service</option>
-            </select>
+          <a href="#serv-cont" class="dropdown select"
+            >Select <span id="toggle-arrow" class="arrow">&gt;</span>
           </a>
         </nav>
 
-        <div class="cta">
+        <div class="cta hero-cta">
           <button class="login-btn trans-btn">Login</button>
           <button class="start-btn brown-btn">Get Started</button>
         </div>
       </div>
     </header>
+    <div class="service-container" id="serv-cont">
+      <!-- <div class="service-items"> -->
+      <ul class="service-items">
+        <li>
+          <div>
+            <img src="./assets/icons/Logo.png" alt="Logo" />
+          </div>
+          <div>
+            <a href="#lead-gen">
+              <h3>Lead Generation</h3>
+              <p>Lorem ipsum dolor sit amet consectetur elit</p>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <img src="./assets/icons/Logo.png" alt="Logo" />
+          </div>
+          <div>
+            <a href="#cont-schedule">
+              <h3>Content Scheduling</h3>
+              <p>Lorem ipsum dolor sit amet consectetur elit</p>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <img src="./assets/icons/Logo.png" alt="Logo" />
+          </div>
+          <div>
+            <a href="#talk-to-us">
+              <h3>Talk To Us</h3>
+              <p>Lorem ipsum dolor sit amet consectetur elit</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- </div> -->
+      <div class="service-dropdown-cta">
+        <p>Looking for a new career? <a href="#">Get in touch</a></p>
+      </div>
+    </div>
 
     <!-- the main starts -->
     <main>
@@ -104,7 +146,7 @@
         </h2>
         <article class="grid-container">
           <!-- Box 1 -->
-          <aside class="grid-col">
+          <aside class="grid-col" id="lead-gen">
             <img src="./assets/icons/Logo.png" alt="Logo" />
             <h3>Lead Generation Tools</h3>
             <p>
@@ -119,7 +161,7 @@
 
           <!-- Box 2 -->
 
-          <aside class="grid-col">
+          <aside class="grid-col" id="cont-schedule">
             <img src="./assets/icons/Logo.png" alt="Logo" />
             <h3>Content Scheduling Made Easy</h3>
             <p>
@@ -290,8 +332,10 @@
             demo to see how easy it is to generate leads and schedule content
             effectively.
           </p>
-          <button class="brown-btn"><a href="">Get Started</a></button>
-          <button class="trans-btn"><a href="">Learn More</a></button>
+          <div class="serv-btn">
+            <button class="brown-btn"><a href="">Get Started</a></button>
+            <button class="trans-btn"><a href="">Learn More</a></button>
+          </div>
         </article>
       </section>
     </main>
@@ -335,7 +379,7 @@
           </ul>
         </section>
 
-        <section class="">
+        <section class="links">
           <h5>Join</h5>
           <label for="email"
             >Subscribe to our newsletter for the latest updates and
@@ -343,31 +387,35 @@
           >
           <input type="email" id="email" placeholder="Your Email Here" />
           <input type="submit" name="submit" id="submit" value="Join" />
-          <p>
+          <p class="news-letter-p">
             By joining, you consent to our Privacy Policy and receiving updates
           </p>
         </section>
       </article>
 
       <hr />
-      <br />
-      <section>
-        <aside>
-          &copy; 2024 Social Thug designed by
-          <a href="https://www.x.com/badmantunde">Tunde Abiola</a> and developed
-          by <a href="https://www.x.com/france_ssa">Ejiro Frances</a>. All
-          rights reserved
+      <section class="sect-with-socials">
+        <aside class="foot-socials">
+          <img src="./assets/icons/Facebook.png" alt="Facebook" />
+          <img src="./assets/icons/Instagram.png" alt="Instagram" />
+          <img src="./assets/icons/X.png" alt="X icon" />
+          <img src="./assets/icons/LinkedIn.png" alt="LinkedIn" />
+          <img src="./assets/icons/Youtube.png" alt="Youtube" />
+        </aside>
+        <aside class="col-beside-socials">
           <span>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
             <a href="#">Cookie Settings</a>
           </span>
-        </aside>
-
-        <aside>
-          <!-- four icons -->
+          <p>&copy; 2024 Social Thug. All rights reserved.</p>
         </aside>
       </section>
+      <small>
+        Designed by <a href="https://www.x.com/badmantunde">Tunde Abiola</a> and
+        developed by
+        <a href="https://www.x.com/france_ssa">Ejiro Frances</a>.</small
+      >
     </footer>
 
     <script src="./js/script.js"></script>

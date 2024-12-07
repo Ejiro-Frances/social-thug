@@ -29,6 +29,59 @@
   nav a:hover {
     color: #ffffff;
   }
+
+  .select.active {
+    transform: unset;
+  }
+  header {
+    position: relative;
+  }
+  .service-container {
+    all: unset;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    background: #121212;
+    font-size: small;
+    display: none;
+  }
+  .service-container.active {
+    display: block;
+  }
+  .service-items {
+    all: unset;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background: #121212;
+    padding: 2.5rem 0;
+  }
+  .service-items p {
+    display: unset;
+  }
+  .service-items li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+  .service-items ul li a:hover {
+    color: grey;
+  }
+
+  .service-dropdown-cta p {
+    background: #444;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+  }
+  .service-dropdown-cta a {
+    display: unset;
+  }
+  .hero-cta.active {
+    margin-top: unset;
+  }
 }
 
 @media (min-width: 780px) {
@@ -91,5 +144,19 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
+  }
+  .sect-with-socials {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .col-beside-socials span a {
+    display: inline;
+    margin: 0 1rem;
+  }
+  input {
+    width: unset;
   }
 }
