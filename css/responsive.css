@@ -1,4 +1,4 @@
-@media (min-width: 620px) {
+@media (min-width: 770px) {
   .hamburger-menu {
     display: none;
   }
@@ -6,6 +6,8 @@
     all: unset;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
   }
   button {
     display: unset;
@@ -18,9 +20,6 @@
     margin-right: 1rem;
   }
 
-  nav {
-    transform: translateX(-55rem) translateY(1rem);
-  }
   nav a {
     all: unset;
     color: #b0b0b0;
@@ -158,5 +157,15 @@
   }
   input {
     width: unset;
+  }
+}
+
+/* laptops */
+@media (min-width: 1024px) {
+  nav {
+    transform: translateX(-120%);
+  }
+  .nav-bar-links {
+    gap: unset;
   }
 }
